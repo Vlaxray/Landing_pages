@@ -1,0 +1,35 @@
+.hero {
+    min-height: 60vh;
+    max-height: 90vh;
+    height: auto;
+    background: url('../assets/greg-rosenke-GAGed6WJoOY-unsplash.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
+ 
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 80, 30, 0.22);
+    z-index: -1;
+  }
+  .hero .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cta {
+    background: linear-gradient(135deg, #14532d, #166534);
+  }
+  .gallery img {
+    width: 100%;
+    height: 250px; /* o qualsiasi altezza fissa */
+    object-fit: cover;
+    object-position: center;
+  }
+  
